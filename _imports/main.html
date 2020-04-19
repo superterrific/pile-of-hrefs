@@ -1,0 +1,35 @@
+<main id="main-content">
+  <div class="content-width">
+    <h1><sergey-slot name="page-title" /> Links</h1>
+    <sergey-import src="no-script" />
+    <div id="<sergey-slot name="app" />" v-cloak>
+      <div id="wrapper" class="flow-3 no-js">
+        <script>document.getElementById('wrapper').classList.remove('no-js');</script>
+        <article v-for="item in items">
+          <h2 class="fluid-type">
+            <a :href="item['fields']['URL']" rel="noopener noreferrer" target="_blank">{{ item['fields']['Title'] }}</a>
+          </h2>
+          <p>
+            {{ item['fields']['Summary'] }}
+          </p>
+          <div class="meta">
+            <p>Published on <time :datetime="item['fields']['Published']">{{ item['fields']['Published'] }}</time> <span v-if="item['fields']['Source']">at {{ item['fields']['Source'] }}</span> </p>
+            <p>Added on <time :datetime="item['fields']['Published']">{{ item['fields']['Added'] }}</time></p>
+          </div>
+          <ul class="categories">
+            <li v-if="item['fields']['A11y']"><a href="/accessibility/">Accessibility</a></li>
+            <li v-if="item['fields']['Code']"><a href="/code/">Code</a></li>
+            <li v-if="item['fields']['CSS']"><a href="/css/">CSS</a></li>
+            <li v-if="item['fields']['Design']"><a href="/design/">Design</a></li>
+            <li v-if="item['fields']['HowTo']"><a href="/how-to/">How To</a></li>
+            <li v-if="item['fields']['Process']"><a href="/process/">Process</a></li>
+            <li v-if="item['fields']['Tools']"><a href="/tools/">Tools</a></li>
+            <li v-if="item['fields']['UI']"><a href="/ui/">UI</a></li>
+            <li v-if="item['fields']['UX']"><a href="/ux/">UX</a></li>
+          </ul>
+        </article>
+        <p><a href="#top">Back to top</a></p>
+      </div>
+    </div>
+  </div>
+</main>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>UI Links - Pile of hrefs</title>
+  <link href="/assets/global.css" rel="stylesheet">
+  <link rel="canonical" href="https://pile-of-hrefs.com/">
+  <meta property="og:site_name" content="Pile of hrefs">
+  <meta property="og:description" content="A collection of links for personal use.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pile-of-hrefs.com/">
+  <meta name="Description" content="A collection of links for personal use.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
+</head>
+<body id="top">
+  <a class="skip" href="#main-content">Skip to main site content</a>
+
+  <header>
+  <section class="header-inner">
+    <div class="page-title fluid-type"><a href="/">Pile of hrefs 📚</a></div>
+    <nav>
+      <ul class="menu fluid-type">
+        <li><a href="/">All</a></li>
+        <li><a href="/accessibility/">Accessibility</a></li>
+        <li><a href="/code/">Code</a></li>
+        <li><a href="/css/">CSS</a></li>
+        <li><a href="/design/">Design</a></li>
+        <li><a href="/how-to/">How To</a></li>
+        <li><a href="/process/">Process</a></li>
+        <li><a href="/tools/">Tools</a></li>
+        <li><a href="/ui/">UI</a></li>
+        <li><a href="/ux/">UX</a></li>
+      </ul>
+    </nav>
+  </section>
+</header>
+
+  <main id="main-content">
+  <div class="content-width">
+    <h1>UI Links</h1>
+    <noscript class="flow">
+  <p>This site requires Javascript, I'm sorry I that couldn't think of any way around that 😔</p>
+  <p>It's on my to do list!</p>
+</noscript>
+
+    <div id="ui" v-cloak>
+      <div id="wrapper" class="flow-3 no-js">
+        <script>document.getElementById('wrapper').classList.remove('no-js');</script>
+        <article v-for="item in items">
+          <h2 class="fluid-type">
+            <a :href="item['fields']['URL']" rel="noopener noreferrer" target="_blank">{{ item['fields']['Title'] }}</a>
+          </h2>
+          <p>
+            {{ item['fields']['Summary'] }}
+          </p>
+          <div class="meta">
+            <p>Published on <time :datetime="item['fields']['Published']">{{ item['fields']['Published'] }}</time> <span v-if="item['fields']['Source']">at {{ item['fields']['Source'] }}</span> </p>
+            <p>Added on <time :datetime="item['fields']['Published']">{{ item['fields']['Added'] }}</time></p>
+          </div>
+          <ul class="categories">
+            <li v-if="item['fields']['A11y']"><a href="/accessibility/">Accessibility</a></li>
+            <li v-if="item['fields']['Code']"><a href="/code/">Code</a></li>
+            <li v-if="item['fields']['CSS']"><a href="/css/">CSS</a></li>
+            <li v-if="item['fields']['Design']"><a href="/design/">Design</a></li>
+            <li v-if="item['fields']['HowTo']"><a href="/how-to/">How To</a></li>
+            <li v-if="item['fields']['Process']"><a href="/process/">Process</a></li>
+            <li v-if="item['fields']['Tools']"><a href="/tools/">Tools</a></li>
+            <li v-if="item['fields']['UI']"><a href="/ui/">UI</a></li>
+            <li v-if="item['fields']['UX']"><a href="/ux/">UX</a></li>
+          </ul>
+        </article>
+        <p><a href="#top">Back to top</a></p>
+      </div>
+    </div>
+  </div>
+</main>
+
+  <footer>
+    <div class="content-width flow-2">
+      <p>A project hastily thrown together by <a href="http://danabyerly.com">Dana Byerly</a>, prompted by a moment of thinking "Maybe I would use Pinboard more if it was responsive?". I guess we'll find out! Contents curated for soley site creator's reading list and/or reference for future hastily thrown together projects.🔮 </p>
+
+      <p>Colophone: Site built with <a href="https://airtable.com/">Airable</a>, <a href="https://vuejs.org/">Vue</a>, <a href="https://www.npmjs.com/package/axios">Axios</a>, <a href="http://sergey.cool">Sergey</a>, <a href="https://fonts.google.com/specimen/Lobster">Lobster font</a> and hosted at <a href="https://www.netlify.com/">Netlify</a>. Fingers crossed that this will finally be the best way for the site creator to keep track of links.🤞🏼 </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="/assets/main.js"></script>
+</body>
+</html>
+
