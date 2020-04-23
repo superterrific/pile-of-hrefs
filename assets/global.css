@@ -1,8 +1,8 @@
 @font-face {
-  font-family: "BigshotOne-Regular";
+  font-family: "Literata-Regular";
   src:
-    url("/assets/BigshotOne-Regular.woff") format("woff"),
-    url("/assets/BigshotOne-Regular.woff2") format("woff2");
+    url("/assets/Literata-VariableFontwght.woff") format("woff"),
+    url("/assets/Literata-VariableFontwght.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: fallback;
@@ -175,8 +175,9 @@ header {
 
 /* Type ------------------------------------------- */
 .page-title {
-  font-family: BigshotOne-Regular, sans-serif;
+  font-family: Literata-Regular, sans-serif;
   line-height: 1.2;
+  font-weight: 700;
 }
 
 .page-title a {
@@ -206,8 +207,8 @@ h2 {
 }
 
 div.fluid-type  {
-  --fluid-type-min-size: 2.2;
-  --fluid-type-max-size: 2.8;
+  --fluid-type-min-size: 2;
+  --fluid-type-max-size: 2.5;
 }
 
 h2.fluid-type {
