@@ -174,18 +174,18 @@ header {
 
 
 /* Type ------------------------------------------- */
-.page-title {
+.site-title {
   font-family: Literata-Regular, sans-serif;
   line-height: 1.2;
   font-weight: 700;
 }
 
-.page-title a {
+.site-title a {
   color: #fff;
   text-decoration: none;
 }
 
-.page-title a:hover {
+.site-title a:hover {
   background: unset;
 }
 
