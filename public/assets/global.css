@@ -337,3 +337,11 @@ a.skip:focus, a.skip:active {
     font-size: 1.2rem;
     z-index: 999;
 }
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    white-space: nowrap;
+}

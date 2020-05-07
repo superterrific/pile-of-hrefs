@@ -7,14 +7,15 @@
         <script>document.getElementById('wrapper').classList.remove('no-js');</script>
         <article v-for="item in items">
           <h2 class="fluid-type">
-            <a :href="item['fields']['URL']" rel="noopener noreferrer" target="_blank">{{ item['fields']['Title'] }}</a>
+            <a :href="item['fields']['URL']" rel="noopener noreferrer" target="_blank">{{ item['fields']['Title'] }}
+            <span class="sr-only">(opens in a new window or tab)</span></a>
           </h2>
           <p>
             {{ item['fields']['Summary'] }}
           </p>
           <div class="meta">
             <p>Published on <time :datetime="item['fields']['Published']">{{ item['fields']['Published'] }}</time> <span v-if="item['fields']['Source']">at {{ item['fields']['Source'] }}</span> </p>
-            <p>Added on <time :datetime="item['fields']['Published']">{{ item['fields']['Added'] }}</time></p>
+            <p>Added on <time :datetime="item['fields']['Added']">{{ item['fields']['Added'] }}</time></p>
           </div>
           <ul class="categories">
             <li v-if="item['fields']['A11y']"><a href="/accessibility/">Accessibility</a></li>
@@ -28,7 +29,7 @@
             <li v-if="item['fields']['UX']"><a href="/ux/">UX</a></li>
           </ul>
         </article>
-        <p><a href="#top">Back to top</a></p>
+        <p><a href="#main-content">Back to top</a></p>
       </div>
     </div>
   </div>
