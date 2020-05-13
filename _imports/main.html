@@ -8,7 +8,7 @@
         <article v-for="item in items">
           <h2 class="fluid-type">
             <a :href="item['fields']['URL']" rel="noopener noreferrer" target="_blank">{{ item['fields']['Title'] }}
-            <span class="sr-only">(opens in a new window or tab)</span></a>
+            <span class="visually-hidden">(opens in a new window or tab)</span></a>
           </h2>
           <p>
             {{ item['fields']['Summary'] }}

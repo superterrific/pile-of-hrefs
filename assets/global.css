@@ -211,9 +211,8 @@ h2 {
 }
 
 .meta {
-  font-size: .9rem;
+  font-size: .87rem;
   margin-bottom: .5rem;
-  line-height: 1.7;
 }
 
 div.fluid-type  {
@@ -338,7 +337,7 @@ a.skip:focus, a.skip:active {
     z-index: 999;
 }
 
-.sr-only {
+.visually-hidden {
     position: absolute;
     width: 1px;
     clip: rect(0 0 0 0);
