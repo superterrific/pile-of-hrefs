@@ -238,36 +238,6 @@ const tools = new Vue({
     }
   });
 
-// UI links
-const ui = new Vue({
-  el: '#ui',
-    data: {
-        items: []
-    },
-    mounted: function(){
-       this.loadItems();
-    },
-
-    methods: {
-        loadItems: function(){
-            let self = this
-            let id = "appT3d0zzRdiap8bV";
-            let key = "keyKvL1yJCWSr0N0U"; // read only key
-            this.items = []
-
-            axios.get("https://api.airtable.com/v0/"+id+"/All?view=UI&sortField=ID&sortDirection=desc", {
-                  headers: { Authorization: "Bearer "+key }
-                })
-                .then(function(response){
-                  self.items = response.data.records
-                })
-                .catch(function(error){
-                console.log(error);
-            })
-        }
-    }
-  });
-
   // UX links
   const ux = new Vue({
     el: '#ux',
