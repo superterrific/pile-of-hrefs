@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  {% include 'partials/meta.html' %}
+  {% set css %}
+      {% include "css/global.css" %}
+  {% endset %}
+  <style>
+      {{ css | cssmin | safe }}
+  </style>
+</head>
+<body>
+  {% include 'partials/header.html' %}
+  <main id="main-content" tabindex="-1">
+    <div class="content-width">
+      <h1{% if page.url === '/404.html' %} class="four-oh-four"{% endif %}>{{ title | safe }}</h1>
+      {% block content %}{% endblock %}
+      <p class="top"><a href="#main-content">Back to top</a></p>
+    </div>
+
+  </main>
+  {% include 'partials/footer.html' %}
+</body>
+</html>

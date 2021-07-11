@@ -1,0 +1,25 @@
+<article>
+  <h2 class="fluid-type">
+    <a href="{{ item.url }}" rel="noopener noreferrer" target="_blank">{{ item.title }}
+    <span class="visually-hidden">(opens in a new window or tab)</span></a>
+  </h2>
+  <p class="summary">
+  {{ item.summary }}
+  </p>
+  <div class="meta">
+    <p>
+      {% if item.published %}Published on <time datetime="{{ item.published }}">{{ item.published }}</time>{% endif %}
+      {% if item.source %}<span>at {{ item.source }}</span>{% endif %}
+    </p>
+    <p>
+      Added on <time datetime="{{ item.added }}">{{ item.added }}</time>
+    </p>
+  </div>
+  <div>
+    <ul class="categories">
+      {% for tag in item.tags %}
+      <li><a href="/{{ tag | slug }}/">{{ tag }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</article>

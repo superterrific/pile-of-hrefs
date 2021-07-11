@@ -1,12 +1,15 @@
+# misc
+*.log
+npm-debug.*
+*.scssc
+*.swp
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
 Thumbs.db
+.env
+.cache
 
-.gitattributes
-ignore/
-node_modules/
+# dependencies
+node_modules
+public
+src/ignore
 package-lock.json
