@@ -1,0 +1,11 @@
+{% extends "layouts/base.html" %}
+
+
+{% block content %}
+<div class="flow-3">
+  {% for item in pagination.items %}
+  {% include "partials/article.html" %}
+  {% endfor %}
+  {% include "partials/pagination.html" %}
+</div>
+{% endblock %}

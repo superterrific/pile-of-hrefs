@@ -1,0 +1,14 @@
+{% extends "layouts/base.html" %}
+
+{% set pileTag = filter %}
+
+{% block content %}
+<div class="flow-3">
+  {% for item in pile %}
+  {% if pileTag in item.tags %}
+  {% include "partials/article.html" %}
+  {% endif %}
+  {% endfor %}
+  {% include "partials/pagination.html" %}
+</div>
+{% endblock %}
