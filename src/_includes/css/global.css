@@ -155,17 +155,24 @@ footer {
 
 .menu li {
   margin-inline-end: 1rem;
+  margin-bottom: .25rem;
   align-self: center;
 }
 
 .menu a {
   color: var(--color-lightest);
-  padding: .1rem;
+  padding: .2rem;
 }
 
-.current {
+[aria-current="page"],
+[data-state="active"] {
   background: var(--color-primary);
   text-decoration: none;
+}
+
+#nav-home [aria-current="page"] {
+  background-color: unset;
+  text-decoration: underline;
 }
 
 /* Type ------------------------------------------- */
@@ -173,6 +180,7 @@ footer {
   font-family: Literata-Regular, sans-serif;
   line-height: 1.2;
   font-weight: 700;
+  margin-bottom: .5rem;
 }
 
 .site-title a {

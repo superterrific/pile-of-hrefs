@@ -1,0 +1,54 @@
+{
+  "items": [
+    {
+      "text": "All",
+      "url": "/",
+      "id": "nav-home"
+    },
+    {
+      "text": "Accessibility",
+      "url": "/accessibility/",
+      "id": "nav-accessibility"
+    },
+    {
+      "text": "Code",
+      "url": "/code/",
+      "id": "nav-code"
+    },
+    {
+      "text": "CSS",
+      "url": "/css/",
+      "id": "nav-css"
+    },
+    {
+      "text": "Design",
+      "url": "/design/",
+      "id": "nav-design"
+    },
+    {
+      "text": "Eleventy",
+      "url": "/eleventy/",
+      "id": "nav-eleventy"
+    },
+    {
+      "text": "How To",
+      "url": "/how-to/",
+      "id": "nav-how-to"
+    },
+    {
+      "text": "Process",
+      "url": "/process/",
+      "id": "nav-process"
+    },
+    {
+      "text": "Tools",
+      "url": "/tools/",
+      "id": "nav-tools"
+    },
+    {
+      "text": "UX",
+      "url": "/ux/",
+      "id": "nav-ux"
+    }
+  ]
+}
