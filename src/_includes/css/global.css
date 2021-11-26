@@ -71,7 +71,7 @@ article > * + * {
 }
 
 
-/* Global ----------------------------------------- */
+/* Global -------------------------------------------- */
 html {
   scroll-padding-top: 110px;
 }
@@ -96,7 +96,7 @@ a:hover {
   text-decoration: none;
 }
 
-/* Layout ----------------------------------------- */
+/* Layout -------------------------------------------- */
 main,
 footer {
   padding: 1rem;
@@ -140,7 +140,7 @@ footer {
   margin-top: 3rem;
 }
 
-/* Menu -------------------------------- */
+/* Menu ---------------------------------------------- */
  nav {
    display: flex;
    align-self: center;
@@ -175,7 +175,7 @@ footer {
   text-decoration: underline;
 }
 
-/* Type ------------------------------------------- */
+/* Type ---------------------------------------------- */
 .site-title {
   font-family: Literata-Regular, sans-serif;
   line-height: 1.2;
@@ -232,7 +232,7 @@ ul.fluid-type {
   text-align: center;
 }
 
-/* Links ------------------------------------------ */
+/* Links --------------------------------------------- */
 .categories {
   display: flex;
   font-size: .9rem;
@@ -257,7 +257,7 @@ main a:focus {
   text-decoration: none;
 }
 
-/* Footer -------------------------------- */
+/* Footer -------------------------------------------- */
 footer {
   color: var(--color-gray);
   padding: 3rem 1rem;
@@ -281,7 +281,7 @@ header a:focus {
   text-decoration-color: var(--color-secondary);
 }
 
-/* Utility----------------------------------------- */
+/* Utility-------------------------------------------- */
 .flow > * + * {
   margin-top: var(--flow-space);
 }
@@ -315,7 +315,7 @@ header a:focus {
   justify-content: space-between;
 }
 
-/* Skip link -------------------------------------- */
+/* Skip link ----------------------------------------- */
 a.skip {
     left: -999px;
     position: absolute;
