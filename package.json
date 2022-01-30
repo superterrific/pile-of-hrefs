@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/superterrific/pile-of-hrefs#readme",
   "dependencies": {
-    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy": "^1.0.0",
     "airtable": "^0.11.1",
     "browser-sync": "^2.27.4",
     "clean-css": "^5.1.3",
