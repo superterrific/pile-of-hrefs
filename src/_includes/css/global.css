@@ -255,6 +255,7 @@ ul.fluid-type {
 main a:focus {
   outline: 2px solid var(--color-secondary);
   text-decoration: none;
+  overflow: auto;
 }
 
 /* Footer -------------------------------------------- */
@@ -279,6 +280,7 @@ footer a:focus,
 header a:focus {
   outline: 2px solid var(--color-lightest);
   text-decoration-color: var(--color-secondary);
+  overflow: auto;
 }
 
 /* Utility-------------------------------------------- */
