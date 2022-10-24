@@ -122,6 +122,11 @@ header {
   width: 70rem;
 }
 
+/* Ugh - figure this out later */
+.site-title picture {
+  padding-left: .5rem;
+}
+
 main {
   padding-bottom: 2.5rem;
   flex: 1;
