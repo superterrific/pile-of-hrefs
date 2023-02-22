@@ -5,6 +5,7 @@
   "main": ".eleventy.js",
   "scripts": {
     "start": "eleventy --serve",
+    "build": "npx eleventy",
     "production": "NODE_ENV=production eleventy"
   },
   "repository": {
@@ -19,9 +20,8 @@
   },
   "homepage": "https://github.com/superterrific/pile-of-hrefs#readme",
   "dependencies": {
-    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy": "^2.0.0",
     "airtable": "^0.11.1",
-    "browser-sync": "^2.27.11",
     "clean-css": "^5.1.3",
     "dotenv": "^10.0.0",
     "html-minifier": "^4.0.0"

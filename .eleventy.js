@@ -1,5 +1,4 @@
 const CleanCSS = require("clean-css");
-
 // Transforms - add transforms!
 const htmlMinTransform = require('./src/transforms/html-min-transform.js');
 
@@ -20,13 +19,7 @@ module.exports = config => {
   // Set directories to pass through to the public folder
   config.addPassthroughCopy("./src/img");
   config.addPassthroughCopy("./src/fonts");
-
-  // Launch in a new browser
-  config.setBrowserSyncConfig({
-    open: true,
-    ghostMode: false
-  });
-
+  
   return {
     markdownTemplateEngine: 'njk',
     dataTemplateEngine: 'njk',
