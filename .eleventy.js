@@ -21,12 +21,6 @@ module.exports = config => {
   config.addPassthroughCopy("./src/img");
   config.addPassthroughCopy("./src/fonts");
 
-  // Launch in a new browser
-  config.setBrowserSyncConfig({
-    open: true,
-    ghostMode: false
-  });
-
   return {
     markdownTemplateEngine: 'njk',
     dataTemplateEngine: 'njk',
