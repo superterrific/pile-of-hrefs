@@ -1,4 +1,2 @@
-[[headers]]
-  for = "/*"
-  [headers.values]
-    Permissions-Policy = "interest-cohort=()"
+[build.environment]
+  NODE_VERSION = "lts/*"
